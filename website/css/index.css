@@ -1,0 +1,97 @@
+html,body{height:100%}
+#fp-nav ul li a.active span{
+    width: 8px;
+    height: 8px;
+    margin-left: -3px;
+}
+#fp-nav ul li a span, .fp-slidesNav ul li a span{
+    top: 2px;
+    left: 2px;
+    width: 2px;
+    height: 2px;
+    border: 1px solid #000;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+}
+#fp-nav ul li .fp-tooltip.right {
+    right: 20px;
+    top: -5px;
+    width: 51px;
+    height: 20px;
+    background: #fff;
+    border-radius: 4px;
+    color: #000;
+    text-align: center;
+    line-height: 20px;
+}
+.section  #last:hover,.section #next:hover {
+    opacity: 1.0;
+    transition: 0.5s;
+}
+.section #last{
+    border-width: 38.5px 34px 38.5px 0;
+    border-color: transparent #fff transparent transparent;
+    border-style: solid;
+    position: absolute;
+    z-index: 4;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    left: 50%;
+    top: 50%;
+    margin-left: -300px;
+    margin-top: -30px;
+    opacity: 0.1;
+    transition: 0.5s;
+}
+.section #next {
+    border-width: 38.5px 0px 38.5px 34px;
+    border-color: transparent transparent transparent #fff;
+    border-style: solid;
+    position: absolute;
+    z-index: 4;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    right: 50%;
+    top: 50%;
+    margin-right: -300px;
+    margin-top: -30px;
+    opacity: 0.1;
+    transition: 0.5s;
+}
+.section .draw {
+    width: 500px;
+    height: 280px;
+    margin-top: -140px;
+    margin-left: -250px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.section #drop_down{
+    height: 20px;
+    padding-top: 355px;
+}
+.section .draw ul {
+    margin: 0px;
+    padding: 0px;
+    transition: left .5s ease;
+}
+.section .draw ul li {
+    list-style-type: none;
+    float: left;
+    position: absolute;
+}
+.section .draw ul li img {
+    width: 500px;
+}
+.section .draw ul li:nth-child(2) {
+    transform: translateX(500px);
+}
+.section .draw ul li:nth-child(n+3) {
+    transform: translateX(-500px) translateZ(0px);
+}
